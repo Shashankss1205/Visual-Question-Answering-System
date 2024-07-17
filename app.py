@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import requests
 from io import BytesIO
 from transformers import ViltProcessor, ViltForQuestionAnswering
 
@@ -31,7 +30,7 @@ def get_answer(image, text):
 
 # Set up the Streamlit app
 st.title("Visual Question Answering")
-st.write("Upload an image and enter a question to get an answer.")
+st.write("Upload an image and ask a question to get the answer.")
 
 # Create columns for image upload and input fields
 col1, col2 = st.columns(2)
